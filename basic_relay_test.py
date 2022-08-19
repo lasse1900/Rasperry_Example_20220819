@@ -13,21 +13,12 @@ from relay_lib_seeed import *
 
 
 def process_loop():
-    # turn all of the relays on
-    relay_all_on()
-    # wait a second
-    time.sleep(1)
-    # turn all of the relays off
-    relay_all_off()
-    # wait a second
-    time.sleep(1)
-
     # now cycle each relay every second in an infinite loop
-    while True:
-        for i in range(1, 5):
-            relay_on(i)
-            time.sleep(1)
-            relay_off(i)
+    relay_on(1)
+    relay_on(2)
+    time.sleep(3)
+    relay_off(1)
+    relay_off(2)
 
 
 # Now see what we're supposed to do next

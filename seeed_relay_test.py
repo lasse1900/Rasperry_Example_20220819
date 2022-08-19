@@ -81,7 +81,7 @@ if __name__ == "__main__":
     signal.signal(signal.SIGINT, endProcess)
 
     while True:
-        ct = raw_input("input: ")
+        ct = input("input: ")
         if ct == '1on':
             relay.ON_1()
         elif ct == '2on':
